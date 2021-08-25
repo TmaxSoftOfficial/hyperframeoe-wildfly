@@ -109,32 +109,15 @@ Include conf/extra/mod_jk.conf
 
 <IfModule mod_jk.c>
 
-# Where to find workers.properties
-
 JkWorkersFile conf/workers.properties
-
-
-# Where to put jk shared memory
 
 JkShmFile logs/mod_jk.shm
 
-
-# Where to put jk logs
-
 JkLogFile logs/mod_jk.log
-
-
-# Set the jk log level [debug/error/info]
 
 JkLogLevel info
 
-
-# Select the timestamp log format
-
 JkLogStampFormat "[%a %b %d %H:%M:%S %Y] "
-
-
-## url pattern 에 따른 connector mapping
 
 JkMountFile conf/uriworkermap.properties
 
