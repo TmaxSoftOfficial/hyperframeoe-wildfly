@@ -173,7 +173,7 @@
       worker.worker1.host=192.168.0.120
       worker.worker1.type=ajp13
 
-* ${APACHE_HOME]/conf/uriworkermap.properties 파일 생성, Tomcat에서 처리할 uri 작성
+* ${APACHE_HOME}/conf/uriworkermap.properties 파일 생성, Tomcat에서 처리할 uri 작성
 
       /*=worker1
 
@@ -187,16 +187,17 @@
       </server>
       ...
       
-* apache 및 WildFly 기동
+* Apache 및 WildFly 기동
       
 ### 2) Nginx
 
-* nginx 종료
+* Nginx 종료
       
       $ ./nginx -s stop
 
-* [Nginx] nginx.conf 파일 수정
+* [Nginx] ${NGINX_HOME}/conf/nginx.conf 파일 수정
       
+      $ vi ${NGINX_HOME}/conf/nginx.conf
       ...
       location / {
            root             html;
@@ -205,8 +206,10 @@
       }
       ...
 
-* [WildFly] standalone.xml 파일 수정
+* [WildFly] ${WILDFLY_HOME}/standalone/configuration/standalone.xml 파일 수정
       
+      
+      $ vi ${WILDFLY_HOME}/standalone/configuration/standalone.xml
       ...
       <inferface>
            <interface name="management">
@@ -223,8 +226,4 @@
       ...
       </server>
  
-* nginx 실행
-
-      $ ./nginx
-
-* nginx 접속
+* Nginx 및 WildFly 기동 
