@@ -78,7 +78,7 @@
 
       JBoss Bootstrap Environment
 
-      JBOSS_HOME: /home/wee/wildfly-22.0.0.Final
+      JBOSS_HOME: ${WILDFLY_HOME}
 
       JAVA: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.302.b08-0.el7_9.x86_64/jre/bin/java
 
@@ -195,9 +195,7 @@
       
 ### 2) Nginx
 
-* Nginx 종료
-      
-      $ ./nginx -s stop
+* 사전에 Nginx 설치가 필요 (Nginx 제품의 README.MD 파일 참고)
 
 * [Nginx] ${NGINX_HOME}/conf/nginx.conf 파일 수정
       
@@ -231,5 +229,3 @@
       </server>
  
 * Nginx 및 WildFly 기동 
-
-
