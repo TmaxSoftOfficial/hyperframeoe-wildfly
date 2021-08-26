@@ -229,7 +229,7 @@
 * Nginx 및 WildFly 기동 
 
 
-## 검증 내역
+## 검증 
 
     HyperFrameOE-Wildfly 22.0.0
     CentOS Linux release 7.9.2009 (Core)에서 테스트 
