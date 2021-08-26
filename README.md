@@ -8,6 +8,11 @@
 * Verison : wildfly-22.0.0
 * Note : https://www.wildfly.org/downloads/
 
+## 검증 환경
+
+    HyperFrameOE-Wildfly 22.0.0
+    CentOS Linux release 7.9.2009 (Core)에서 테스트 
+
 ## 설치 및 실행
 
 ### 1) WildFly 압축 풀기
@@ -229,7 +234,3 @@
 * Nginx 및 WildFly 기동 
 
 
-## 검증 
-
-    HyperFrameOE-Wildfly 22.0.0
-    CentOS Linux release 7.9.2009 (Core)에서 테스트 
